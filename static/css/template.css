@@ -1,0 +1,104 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Define a dark color scheme */
+  :root {
+    --background-color: #1a1a1a; /* Dark background color */
+    --text-color: #ffffff; /* White text color */
+    --link-color: #3498db; /* Blue link color */
+  }
+  
+  /* Apply dark color scheme to the body */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333; /* Dark gray background for the header */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: var(--text-color);
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+  }
+  
+  /* Add animations and transitions */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animations to specific elements */
+  .animated {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Add more custom styles for your content */
+  /* Example:
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+  */
+  
+  /* Responsive styles (adjust as needed) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .menu li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Add more custom styles for different screen sizes */
+  /* Example:
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 20px;
+    }
+  }
+  */
